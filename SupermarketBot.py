@@ -154,7 +154,7 @@ async def confirm(message: types.Message):
             idx = df_product.index[0]
             df.loc[idx, 'inventory'] = inventory + item[2]
         orders.remove(customers[id].order)
-        answer = 'Заказ был успешно отменен. Если вам ещё нужны другие службы, вы можете ввести \start . До свидания!'
+        answer = 'Заказ был успешно отменен. Если вам ещё нужны другие службы, вы можете ввести /start. До свидания!'
         keyboard = types.ReplyKeyboardRemove()
         await bot.send_message(id, answer, reply_markup=keyboard)
         await BotStates.end_state.set()
