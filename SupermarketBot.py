@@ -13,7 +13,7 @@ import random
 nlp_spacy = spacy.load("ru_core_news_sm")
 stemmer = SnowballStemmer("russian")
 
-TOKEN = '6185113237:AAEYce6DU9MNACzxIS_rkiotv1Rhlscz4oE'
+TOKEN = 'Здесь ваш TOKEN'
 bot = Bot(token=TOKEN)
 dp = Dispatcher(bot, storage=MemoryStorage())
 
